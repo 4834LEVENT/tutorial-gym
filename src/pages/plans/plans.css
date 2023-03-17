@@ -1,0 +1,50 @@
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.plans h3 {
+  margin-bottom: 0.8rem;
+}
+.plans small {
+  margin-bottom: 3rem;
+}
+.plans h1 {
+  color: var(--color-primary-varient);
+  display: inline;
+}
+.plans h4 {
+  margin-top: 2rem;
+}
+.plans p.disabled {
+  color: var(--color-gray-400);
+}
+.plans button {
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .plans-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .plans-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: auto;
+  }
+  .about-section-image {
+    grid-template-columns: 1fr;
+  }
+  .plans {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
